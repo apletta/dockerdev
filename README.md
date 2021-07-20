@@ -1,7 +1,9 @@
 # dockerdev
 
-First, make sure [Docker](https://docs.docker.com/desktop/) is installed.
-- You can verify your installation version by running the following command:
+First, make sure Docker and Docker Compose are installed.
+1. [Docker](https://docs.docker.com/desktop/)
+2. [Docker Compose](https://docs.docker.com/compose/install/)
+- Once complete, you can verify your installation version by running the following command:
   ```
   docker-compose --version
   ```
