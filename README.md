@@ -1,28 +1,32 @@
 # dockerdev
 
 First, make sure [Docker](https://docs.docker.com/desktop/) is installed.
+- You can verify your installation version by running the following command:
+  ```
+  docker-compose --version
+  ```
 
 Then, commands to create/activate the environment (after Docker is installed):
 1. Move to the dockerdev_home directory
 ```
-$ cd dockerdev_home
+cd dockerdev_home
 ```
 2. Build the image
 ```
-$ docker-compose build dockerdev
+docker-compose build dockerdev
 ```
 3. Bring the image up in the background
 ```
-$ docker-compose up -d dockerdev
+docker-compose up -d dockerdev
 ```
 4. Attach to a shell
 ```
-$ docker-compose exec dockerdev bash
+docker-compose exec dockerdev bash
 ```
 - To exit the shell when you're done doing things in the container, just type exit. The docker image will stay active in the background until you do step 5 (so you recan re-attach when you want, by running step 4 again)
 5. To close/remove the docker image (run from in the dockerdev_home directory, but outside of the docker environment)
 ```
-$ docker-compose down
+docker-compose down
 ```
 
 Other notes
