@@ -2,7 +2,7 @@
 
 First, make sure [Docker](https://docs.docker.com/desktop/) is installed.
 
-Thye, commands to create/activate the environment (after Docker is installed):
+Then, commands to create/activate the environment (after Docker is installed):
 1. Move to the dockerdev_home directory
 ```
 $ cd dockerdev_home
