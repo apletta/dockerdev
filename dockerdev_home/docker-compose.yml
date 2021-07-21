@@ -1,12 +1,12 @@
 version: "3.9"
 services:
-    dockerdev:
-        build:
-            context: .
-            dockerfile: ./docker/dockerdev.dockerfile
-        ports:
-            - "5000:5000"
-        volumes:
-            - .:/root/dockerdev_home
-              #stdin_open: true
-              #tty: true
+  dockerdev:
+    build:
+      context: .
+      dockerfile: ./docker/dockerdev.dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/root/dockerdev_home
+    stdin_open: true
+    tty: true
