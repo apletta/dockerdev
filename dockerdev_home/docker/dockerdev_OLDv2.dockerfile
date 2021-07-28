@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM jupyter/minimal-notebook
 
 WORKDIR /root/dockerdev_home
 
@@ -20,15 +20,18 @@ RUN apt-get install ffmpeg libsm6 libxext6 -y
 RUN pip3 install numpy==1.19.2
 RUN pip3 install tensorflow==2.5.0 
 RUN pip3 install pandas==1.1.3
-RUN pip3 install scipy==1.5.2
+RUN pip3 install scipy==1.6.0
 RUN pip3 install tqdm==4.54.1
 RUN pip3 install matplotlib==3.3.1
 RUN pip3 install glob2==0.7
 RUN pip3 install urllib3==1.25.9
-RUN pip3 install jupyterlab
+#RUN pip3 install jupyterlab
 #RUN pip3 install --upgrade pip setuptools wheel
 RUN pip3 install imgaug==0.4.0
 RUN pip3 install opencv-python
 #RUN pip3 install re==2.2.1
 
 #ENV PATH=/root/dockerdev_home:${PATH}
+ENV PYTHONPATH /usr/local/lib/python3.6/dist-packages/
+
+#ADD --chown=joyvan . PYTHONPATH
